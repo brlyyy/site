@@ -1,1 +1,229 @@
-test test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Amukh1 Portfolio">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Amukh1">
+    <title>Amukh1</title>
+    <link rel="icon" href="sleepy.png">
+    
+    <link rel="stylesheet" href="index.css">
+<style>body {
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: rgb(255,255,255);
+margin: 0px;
+padding: 0px;
+
+}
+
+
+
+
+.nothead {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+align-items: center;
+}
+
+
+
+     
+
+     .pe1 {
+
+color: white;
+text-align: center;
+
+     }
+     
+ 
+
+
+
+
+
+         .header {
+
+          text-align: center;
+        
+          margin: 40px;
+        
+        }
+        
+        
+        .Amukh1 {
+          transition: all 0.2s linear;
+          color: rgb(100, 100, 100)
+        
+        }
+        
+        .Amukh1:hover {
+        
+          transition: all 0.2s linear;
+          color:rgb(255, 251, 0)
+        
+        }
+
+.Sbtn {
+
+  outline: none;
+  border: 0;
+  font-size: 16px;
+  line-height: 1;
+  padding: 16px 30px;
+  border-radius: 10px;
+  background: cornflowerblue;
+  color: aliceblue;
+  cursor: pointer;
+  margin: 0px;
+  position: relative;
+  transition: top ease 0.5s;
+  top: 0px;
+
+}
+
+
+.Sbtn:hover {
+
+  background: rgb(57, 112, 214);
+  top: -10px;
+  
+}
+
+.Sbtn:active {
+  background: rgb(12, 42, 99);
+    
+    
+    
+     }
+
+     /* .nav {
+      background: rgb(194, 194, 194);
+      width: 1700px;
+      height: 35px;
+      margin: 0px;
+     }
+     .navlinks {
+      display: flex;
+      flex-direction: row-reverse;
+     } */
+
+     /* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+   border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.pfp {
+
+  border-radius: 25px;
+  background-color: #888;
+  border-width: 10px;
+  border-color: black;
+}</style>
+</head>
+<body>
+    </div>
+    <div class="content">
+    <!-- <div class="nav">
+<div class="navlinks">
+<h3>Work</h3>
+</div>
+    </div> -->
+   <div class='nothead'> 
+       
+   
+    <div class="header">
+
+        
+        <img class="pfp" src="frog.jpg" alt="frogpfp">
+
+        <h1>Hi. I'm <span class="Amukh1">Brly.</span></h1>
+        <p>I like programming, Im certified in <strong><span class="js">JavaScript</span></strong></p>
+        <p>Here's a chart on how many people have visited this website since it was made! <strong>*Test Data*</strong></p>
+        
+        <canvas id="myChart" width="900" height="700"></canvas>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Sept 26th', 'Sept 27th', 'Sept 29th', 'Oct 1st', 'Oct 3rd', 'Oct 5th', 'Oct 7th'],
+                datasets: [{
+                    label: '# of Visitors',
+                    data: [12, 14, 8.7, 12, 16.5, 18, 16],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+        </script>
+         
+        
+
+
+        <p>Also, if you wouldnt mind, please take this survey</p>
+        <br>
+        <button onClick="Survey()" class="Sbtn">Take Survey</button>
+
+    </div>
+    <!--- JS --->
+    <script  defer src="main.js"></script>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
+      <script>
+          $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow");
+          });
+      </script>
+    <!--- JS --->
+    </div>
+</body>
+</html>
